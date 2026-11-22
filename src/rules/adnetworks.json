@@ -1,0 +1,235 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "propellerads.com",
+        "propellerclick.com",
+        "propu.net",
+        "propellerpops.com",
+        "adsterra.com",
+        "adsterranetwork.com",
+        "profitableratecpm.com",
+        "highperformanceformat.com",
+        "displaycontentnetwork.com",
+        "effectiveratecpm.com",
+        "hilltopads.net",
+        "hilltopads.com",
+        "clickadu.com",
+        "cdn.clickadu.com",
+        "popads.net",
+        "popcash.net",
+        "popmyads.com",
+        "poweradnetwork.com",
+        "exoclick.com",
+        "exosrv.com",
+        "juicyads.com",
+        "trafficjunky.net",
+        "adcash.com",
+        "adnxs.com",
+        "onclickalgo.com",
+        "onclickmax.com",
+        "onclicksuper.com",
+        "mgid.com",
+        "servicer.mgid.com",
+        "adskeeper.com",
+        "adskeeper.co.uk",
+        "revcontent.com",
+        "trafficfactory.biz",
+        "zeropark.com",
+        "monetag.com",
+        "vignette.monetag.com",
+        "richads.com",
+        "rtmark.net",
+        "galaksion.com",
+        "adplayer.pro",
+        "aduttt.com",
+        "bidgear.com",
+        "cpmstar.com",
+        "adservme.com",
+        "trafficstars.com",
+        "tsyndicate.com",
+        "boylikezamia.shop",
+        "clappegiust.cfd",
+        "totalsnetbush.com",
+        "reedmanovereyegutsily.cfd",
+        "drivagebidding.cyou"
+      ],
+      "resourceTypes": [
+        "script",
+        "sub_frame",
+        "xmlhttprequest",
+        "image",
+        "media",
+        "websocket",
+        "ping",
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||google-analytics.com^",
+      "excludedInitiatorDomains": [
+        "youtube.com",
+        "youtube-nocookie.com",
+        "googlesyndication.com",
+        "doubleclick.net"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "image",
+        "ping"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googletagmanager.com^",
+      "excludedInitiatorDomains": [
+        "youtube.com",
+        "youtube-nocookie.com",
+        "googlesyndication.com",
+        "doubleclick.net"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||doubleclick.net^",
+      "excludedInitiatorDomains": [
+        "youtube.com",
+        "youtube-nocookie.com",
+        "googlesyndication.com",
+        "doubleclick.net"
+      ],
+      "resourceTypes": [
+        "script",
+        "sub_frame",
+        "xmlhttprequest",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "excludedInitiatorDomains": [
+        "youtube.com",
+        "youtube-nocookie.com",
+        "googlesyndication.com",
+        "doubleclick.net"
+      ],
+      "resourceTypes": [
+        "script",
+        "sub_frame",
+        "xmlhttprequest",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/popunder",
+      "resourceTypes": [
+        "script",
+        "sub_frame",
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/popunder",
+      "isUrlFilterCaseSensitive": false,
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "/[0-9a-f]{32}/invoke\\.js$",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "/[0-9]{1,2}/[0-9a-f]{32}(\\?|$)",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script",
+        "sub_frame",
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "priority": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "/[a-z][A-Za-z0-9]{10,24}/[A-Za-z0-9]{5}$",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script"
+      ]
+    }
+  }
+]
